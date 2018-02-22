@@ -1,0 +1,20 @@
+Release 14.7 - ngc2edif P_INT.20160526 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design vga_debug.ngc ...
+WARNING:NetListWriters:298 - No output is written to vga_debug.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus row_addr[6 : 0] on block vga_debug is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   current_display_reg_addr[7]_GND_1_o_select_56_OUT[52 : 0] on block vga_debug
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus strdata[52 : 0] on block vga_debug is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Msub_col_addr_cy[5 : 0] on block
+   vga_debug is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file vga_debug.edif ...
+ngc2edif: Total memory usage is 85760 kilobytes
+

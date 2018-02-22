@@ -1,0 +1,1582 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Dec 08 19:20:41 2017
+# Process ID: 6396
+# Current directory: E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.runs/synth_1
+# Command line: vivado.exe -log mips_top.vds -mode batch -messageDb vivado.pb -notrace -source mips_top.tcl
+# Log file: E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.runs/synth_1/mips_top.vds
+# Journal file: E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mips_top.tcl -notrace
+Command: synth_design -top mips_top -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10900 
+WARNING: [Synth 8-2611] redeclaration of ansi port cp0_oper is not allowed [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/datapath.v:80]
+WARNING: [Synth 8-976] cp0_oper has already been declared [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/datapath.v:80]
+WARNING: [Synth 8-2654] second declaration of cp0_oper ignored [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/datapath.v:80]
+INFO: [Synth 8-994] cp0_oper is declared here [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/datapath.v:36]
+WARNING: [Synth 8-2611] redeclaration of ansi port h_count is not allowed [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/vga.v:11]
+WARNING: [Synth 8-2611] redeclaration of ansi port v_count is not allowed [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/vga.v:22]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 342.016 ; gain = 135.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips_top' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/mips_top.v:8]
+INFO: [Synth 8-638] synthesizing module 'clk_diff' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/clk_diff.v:5]
+INFO: [Synth 8-638] synthesizing module 'IBUFGDS' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14583]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFGDS' (1#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14583]
+INFO: [Synth 8-256] done synthesizing module 'clk_diff' (2#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/clk_diff.v:5]
+INFO: [Synth 8-638] synthesizing module 'my_clk_gen' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/my_clk_gen.v:71]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 5.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 5.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 100 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (3#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (4#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'my_clk_gen' (5#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/my_clk_gen.v:71]
+INFO: [Synth 8-638] synthesizing module 'btn_scan' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/btn_scan.v:9]
+	Parameter CLK_FREQ bound to: 25 - type: integer 
+	Parameter SCAN_INTERVAL bound to: 10 - type: integer 
+	Parameter COUNT_SCAN bound to: 250001 - type: integer 
+	Parameter COUNT_BITS bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'btn_scan' (6#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/btn_scan.v:9]
+INFO: [Synth 8-638] synthesizing module 'display' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/display.v:8]
+	Parameter CLK_FREQ bound to: 25 - type: integer 
+	Parameter SEG_PULSE bound to: 1'b0 
+	Parameter REFRESH_INTERVAL bound to: 100 - type: integer 
+	Parameter COUNT_REFRESH bound to: 2500001 - type: integer 
+	Parameter COUNT_BITS bound to: 22 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'parallel2serial' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/parallel2serial.v:8]
+	Parameter P_CLK_FREQ bound to: 25 - type: integer 
+	Parameter S_CLK_FREQ bound to: 20 - type: integer 
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter CODE_ENDIAN bound to: 1 - type: integer 
+	Parameter COUNT_HALFCYCLE bound to: 1 - type: integer 
+	Parameter CYCLE_COUNT_BITS bound to: 1 - type: integer 
+	Parameter DATA_COUNT_BITS bound to: 4 - type: integer 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_CLEAR bound to: 1 - type: integer 
+	Parameter S_WORK bound to: 2 - type: integer 
+	Parameter S_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/parallel2serial.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/parallel2serial.v:100]
+INFO: [Synth 8-256] done synthesizing module 'parallel2serial' (7#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/parallel2serial.v:8]
+INFO: [Synth 8-638] synthesizing module 'parallel2serial__parameterized0' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/parallel2serial.v:8]
+	Parameter P_CLK_FREQ bound to: 25 - type: integer 
+	Parameter S_CLK_FREQ bound to: 20 - type: integer 
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter CODE_ENDIAN bound to: 1 - type: integer 
+	Parameter COUNT_HALFCYCLE bound to: 1 - type: integer 
+	Parameter CYCLE_COUNT_BITS bound to: 1 - type: integer 
+	Parameter DATA_COUNT_BITS bound to: 6 - type: integer 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_CLEAR bound to: 1 - type: integer 
+	Parameter S_WORK bound to: 2 - type: integer 
+	Parameter S_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/parallel2serial.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/parallel2serial.v:100]
+INFO: [Synth 8-256] done synthesizing module 'parallel2serial__parameterized0' (7#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/parallel2serial.v:8]
+INFO: [Synth 8-256] done synthesizing module 'display' (8#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/display.v:8]
+WARNING: [Synth 8-350] instance 'DISPLAY' of module 'display' requires 14 connections, but only 12 given [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/mips_top.v:80]
+INFO: [Synth 8-638] synthesizing module 'mips' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/mips.v:8]
+INFO: [Synth 8-638] synthesizing module 'mips_core' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/mips_core.v:4]
+INFO: [Synth 8-638] synthesizing module 'controller' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/controller.v:4]
+	Parameter PC_NEXT bound to: 0 - type: integer 
+	Parameter PC_JUMP bound to: 1 - type: integer 
+	Parameter PC_JR bound to: 2 - type: integer 
+	Parameter PC_BEQ bound to: 4 - type: integer 
+	Parameter PC_BNE bound to: 5 - type: integer 
+	Parameter EXE_A_RS bound to: 0 - type: integer 
+	Parameter EXE_A_SA bound to: 1 - type: integer 
+	Parameter EXE_A_LINK bound to: 2 - type: integer 
+	Parameter EXE_A_EXC bound to: 3 - type: integer 
+	Parameter EXE_B_RT bound to: 0 - type: integer 
+	Parameter EXE_B_IMM bound to: 1 - type: integer 
+	Parameter EXE_B_LINK bound to: 2 - type: integer 
+	Parameter EXE_B_EXC bound to: 3 - type: integer 
+	Parameter EXE_ALU_ADD bound to: 0 - type: integer 
+	Parameter EXE_ALU_SUB bound to: 1 - type: integer 
+	Parameter EXE_ALU_SLT bound to: 2 - type: integer 
+	Parameter EXE_ALU_LUI bound to: 3 - type: integer 
+	Parameter EXE_ALU_AND bound to: 4 - type: integer 
+	Parameter EXE_ALU_OR bound to: 5 - type: integer 
+	Parameter EXE_ALU_XOR bound to: 6 - type: integer 
+	Parameter EXE_ALU_NOR bound to: 7 - type: integer 
+	Parameter EXE_ALU_SLL bound to: 8 - type: integer 
+	Parameter EXE_ALU_SRL bound to: 9 - type: integer 
+	Parameter EXE_ALU_SRA bound to: 10 - type: integer 
+	Parameter EXE_ALU_SLLV bound to: 11 - type: integer 
+	Parameter EXE_ALU_SRLV bound to: 12 - type: integer 
+	Parameter EXE_ALU_SRAV bound to: 13 - type: integer 
+	Parameter WB_ADDR_RD bound to: 0 - type: integer 
+	Parameter WB_ADDR_RT bound to: 1 - type: integer 
+	Parameter WB_ADDR_LINK bound to: 2 - type: integer 
+	Parameter WB_DATA_ALU bound to: 0 - type: integer 
+	Parameter WB_DATA_MEM bound to: 1 - type: integer 
+	Parameter PC_RESET bound to: 0 - type: integer 
+	Parameter INST_R bound to: 6'b000000 
+	Parameter R_FUNC_SLL bound to: 6'b000000 
+	Parameter R_FUNC_SRL bound to: 6'b000010 
+	Parameter R_FUNC_SRA bound to: 6'b000011 
+	Parameter R_FUNC_SLLV bound to: 6'b000100 
+	Parameter R_FUNC_SRLV bound to: 6'b000110 
+	Parameter R_FUNC_SRAV bound to: 6'b000111 
+	Parameter R_FUNC_JR bound to: 6'b001000 
+	Parameter R_FUNC_ADD bound to: 6'b100000 
+	Parameter R_FUNC_ADDU bound to: 6'b100001 
+	Parameter R_FUNC_SUB bound to: 6'b100010 
+	Parameter R_FUNC_SUBU bound to: 6'b100011 
+	Parameter R_FUNC_AND bound to: 6'b100100 
+	Parameter R_FUNC_OR bound to: 6'b100101 
+	Parameter R_FUNC_XOR bound to: 6'b100110 
+	Parameter R_FUNC_NOR bound to: 6'b100111 
+	Parameter R_FUNC_SLT bound to: 6'b101010 
+	Parameter R_FUNC_SLTU bound to: 6'b101011 
+	Parameter INST_J bound to: 6'b000010 
+	Parameter INST_JAL bound to: 6'b000011 
+	Parameter INST_BEQ bound to: 6'b000100 
+	Parameter INST_BNE bound to: 6'b000101 
+	Parameter INST_ADDI bound to: 6'b001000 
+	Parameter INST_ADDIU bound to: 6'b001001 
+	Parameter INST_SLTI bound to: 6'b001010 
+	Parameter INST_SLTIU bound to: 6'b001011 
+	Parameter INST_ANDI bound to: 6'b001100 
+	Parameter INST_ORI bound to: 6'b001101 
+	Parameter INST_XORI bound to: 6'b001110 
+	Parameter INST_LUI bound to: 6'b001111 
+	Parameter INST_CP0 bound to: 6'b010000 
+	Parameter CP_FUNC_MF bound to: 4'b0000 
+	Parameter CP_FUNC_MT bound to: 4'b0100 
+	Parameter CP0_CO_ERET bound to: 6'b011000 
+	Parameter INST_LW bound to: 6'b100011 
+	Parameter INST_SW bound to: 6'b101011 
+	Parameter GPR_ZERO bound to: 0 - type: integer 
+	Parameter GPR_AT bound to: 1 - type: integer 
+	Parameter GPR_V0 bound to: 2 - type: integer 
+	Parameter GPR_V1 bound to: 3 - type: integer 
+	Parameter GPR_A0 bound to: 4 - type: integer 
+	Parameter GPR_A1 bound to: 5 - type: integer 
+	Parameter GPR_A2 bound to: 6 - type: integer 
+	Parameter GPR_A3 bound to: 7 - type: integer 
+	Parameter GPR_T0 bound to: 8 - type: integer 
+	Parameter GPR_T1 bound to: 9 - type: integer 
+	Parameter GPR_T2 bound to: 10 - type: integer 
+	Parameter GPR_T3 bound to: 11 - type: integer 
+	Parameter GPR_T4 bound to: 12 - type: integer 
+	Parameter GPR_T5 bound to: 13 - type: integer 
+	Parameter GPR_T6 bound to: 14 - type: integer 
+	Parameter GPR_T7 bound to: 15 - type: integer 
+	Parameter GPR_S0 bound to: 16 - type: integer 
+	Parameter GPR_S1 bound to: 17 - type: integer 
+	Parameter GPR_S2 bound to: 18 - type: integer 
+	Parameter GPR_S3 bound to: 19 - type: integer 
+	Parameter GPR_S4 bound to: 20 - type: integer 
+	Parameter GPR_S5 bound to: 21 - type: integer 
+	Parameter GPR_S6 bound to: 22 - type: integer 
+	Parameter GPR_S7 bound to: 23 - type: integer 
+	Parameter GPR_T8 bound to: 24 - type: integer 
+	Parameter GPR_T9 bound to: 25 - type: integer 
+	Parameter GPR_K0 bound to: 26 - type: integer 
+	Parameter GPR_K1 bound to: 27 - type: integer 
+	Parameter GPR_GP bound to: 28 - type: integer 
+	Parameter GPR_SP bound to: 29 - type: integer 
+	Parameter GPR_FP bound to: 30 - type: integer 
+	Parameter GPR_RA bound to: 31 - type: integer 
+	Parameter CP0_EPCR bound to: 2 - type: integer 
+	Parameter CP0_EHBR bound to: 3 - type: integer 
+	Parameter EXE_CP_NONE bound to: 0 - type: integer 
+	Parameter EXE_CP_STORE bound to: 1 - type: integer 
+	Parameter EXE_CP0_ERET bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/controller.v:89]
+WARNING: [Synth 8-3848] Net is_branch_id in module/entity controller does not have driver. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/controller.v:39]
+INFO: [Synth 8-256] done synthesizing module 'controller' (9#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/controller.v:4]
+WARNING: [Synth 8-350] instance 'CONTROLLER' of module 'controller' requires 44 connections, but only 43 given [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/mips_core.v:61]
+INFO: [Synth 8-638] synthesizing module 'datapath' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/datapath.v:3]
+	Parameter PC_NEXT bound to: 0 - type: integer 
+	Parameter PC_JUMP bound to: 1 - type: integer 
+	Parameter PC_JR bound to: 2 - type: integer 
+	Parameter PC_BEQ bound to: 4 - type: integer 
+	Parameter PC_BNE bound to: 5 - type: integer 
+	Parameter EXE_A_RS bound to: 0 - type: integer 
+	Parameter EXE_A_SA bound to: 1 - type: integer 
+	Parameter EXE_A_LINK bound to: 2 - type: integer 
+	Parameter EXE_A_EXC bound to: 3 - type: integer 
+	Parameter EXE_B_RT bound to: 0 - type: integer 
+	Parameter EXE_B_IMM bound to: 1 - type: integer 
+	Parameter EXE_B_LINK bound to: 2 - type: integer 
+	Parameter EXE_B_EXC bound to: 3 - type: integer 
+	Parameter EXE_ALU_ADD bound to: 0 - type: integer 
+	Parameter EXE_ALU_SUB bound to: 1 - type: integer 
+	Parameter EXE_ALU_SLT bound to: 2 - type: integer 
+	Parameter EXE_ALU_LUI bound to: 3 - type: integer 
+	Parameter EXE_ALU_AND bound to: 4 - type: integer 
+	Parameter EXE_ALU_OR bound to: 5 - type: integer 
+	Parameter EXE_ALU_XOR bound to: 6 - type: integer 
+	Parameter EXE_ALU_NOR bound to: 7 - type: integer 
+	Parameter EXE_ALU_SLL bound to: 8 - type: integer 
+	Parameter EXE_ALU_SRL bound to: 9 - type: integer 
+	Parameter EXE_ALU_SRA bound to: 10 - type: integer 
+	Parameter EXE_ALU_SLLV bound to: 11 - type: integer 
+	Parameter EXE_ALU_SRLV bound to: 12 - type: integer 
+	Parameter EXE_ALU_SRAV bound to: 13 - type: integer 
+	Parameter WB_ADDR_RD bound to: 0 - type: integer 
+	Parameter WB_ADDR_RT bound to: 1 - type: integer 
+	Parameter WB_ADDR_LINK bound to: 2 - type: integer 
+	Parameter WB_DATA_ALU bound to: 0 - type: integer 
+	Parameter WB_DATA_MEM bound to: 1 - type: integer 
+	Parameter PC_RESET bound to: 0 - type: integer 
+	Parameter INST_R bound to: 6'b000000 
+	Parameter R_FUNC_SLL bound to: 6'b000000 
+	Parameter R_FUNC_SRL bound to: 6'b000010 
+	Parameter R_FUNC_SRA bound to: 6'b000011 
+	Parameter R_FUNC_SLLV bound to: 6'b000100 
+	Parameter R_FUNC_SRLV bound to: 6'b000110 
+	Parameter R_FUNC_SRAV bound to: 6'b000111 
+	Parameter R_FUNC_JR bound to: 6'b001000 
+	Parameter R_FUNC_ADD bound to: 6'b100000 
+	Parameter R_FUNC_ADDU bound to: 6'b100001 
+	Parameter R_FUNC_SUB bound to: 6'b100010 
+	Parameter R_FUNC_SUBU bound to: 6'b100011 
+	Parameter R_FUNC_AND bound to: 6'b100100 
+	Parameter R_FUNC_OR bound to: 6'b100101 
+	Parameter R_FUNC_XOR bound to: 6'b100110 
+	Parameter R_FUNC_NOR bound to: 6'b100111 
+	Parameter R_FUNC_SLT bound to: 6'b101010 
+	Parameter R_FUNC_SLTU bound to: 6'b101011 
+	Parameter INST_J bound to: 6'b000010 
+	Parameter INST_JAL bound to: 6'b000011 
+	Parameter INST_BEQ bound to: 6'b000100 
+	Parameter INST_BNE bound to: 6'b000101 
+	Parameter INST_ADDI bound to: 6'b001000 
+	Parameter INST_ADDIU bound to: 6'b001001 
+	Parameter INST_SLTI bound to: 6'b001010 
+	Parameter INST_SLTIU bound to: 6'b001011 
+	Parameter INST_ANDI bound to: 6'b001100 
+	Parameter INST_ORI bound to: 6'b001101 
+	Parameter INST_XORI bound to: 6'b001110 
+	Parameter INST_LUI bound to: 6'b001111 
+	Parameter INST_CP0 bound to: 6'b010000 
+	Parameter CP_FUNC_MF bound to: 4'b0000 
+	Parameter CP_FUNC_MT bound to: 4'b0100 
+	Parameter CP0_CO_ERET bound to: 6'b011000 
+	Parameter INST_LW bound to: 6'b100011 
+	Parameter INST_SW bound to: 6'b101011 
+	Parameter GPR_ZERO bound to: 0 - type: integer 
+	Parameter GPR_AT bound to: 1 - type: integer 
+	Parameter GPR_V0 bound to: 2 - type: integer 
+	Parameter GPR_V1 bound to: 3 - type: integer 
+	Parameter GPR_A0 bound to: 4 - type: integer 
+	Parameter GPR_A1 bound to: 5 - type: integer 
+	Parameter GPR_A2 bound to: 6 - type: integer 
+	Parameter GPR_A3 bound to: 7 - type: integer 
+	Parameter GPR_T0 bound to: 8 - type: integer 
+	Parameter GPR_T1 bound to: 9 - type: integer 
+	Parameter GPR_T2 bound to: 10 - type: integer 
+	Parameter GPR_T3 bound to: 11 - type: integer 
+	Parameter GPR_T4 bound to: 12 - type: integer 
+	Parameter GPR_T5 bound to: 13 - type: integer 
+	Parameter GPR_T6 bound to: 14 - type: integer 
+	Parameter GPR_T7 bound to: 15 - type: integer 
+	Parameter GPR_S0 bound to: 16 - type: integer 
+	Parameter GPR_S1 bound to: 17 - type: integer 
+	Parameter GPR_S2 bound to: 18 - type: integer 
+	Parameter GPR_S3 bound to: 19 - type: integer 
+	Parameter GPR_S4 bound to: 20 - type: integer 
+	Parameter GPR_S5 bound to: 21 - type: integer 
+	Parameter GPR_S6 bound to: 22 - type: integer 
+	Parameter GPR_S7 bound to: 23 - type: integer 
+	Parameter GPR_T8 bound to: 24 - type: integer 
+	Parameter GPR_T9 bound to: 25 - type: integer 
+	Parameter GPR_K0 bound to: 26 - type: integer 
+	Parameter GPR_K1 bound to: 27 - type: integer 
+	Parameter GPR_GP bound to: 28 - type: integer 
+	Parameter GPR_SP bound to: 29 - type: integer 
+	Parameter GPR_FP bound to: 30 - type: integer 
+	Parameter GPR_RA bound to: 31 - type: integer 
+	Parameter CP0_EPCR bound to: 2 - type: integer 
+	Parameter CP0_EHBR bound to: 3 - type: integer 
+	Parameter EXE_CP_NONE bound to: 0 - type: integer 
+	Parameter EXE_CP_STORE bound to: 1 - type: integer 
+	Parameter EXE_CP0_ERET bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/datapath.v:252]
+INFO: [Synth 8-638] synthesizing module 'regfile' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/regfile.v:8]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (10#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/regfile.v:8]
+INFO: [Synth 8-638] synthesizing module 'alu' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/alu.v:8]
+	Parameter PC_NEXT bound to: 0 - type: integer 
+	Parameter PC_JUMP bound to: 1 - type: integer 
+	Parameter PC_JR bound to: 2 - type: integer 
+	Parameter PC_BEQ bound to: 4 - type: integer 
+	Parameter PC_BNE bound to: 5 - type: integer 
+	Parameter EXE_A_RS bound to: 0 - type: integer 
+	Parameter EXE_A_SA bound to: 1 - type: integer 
+	Parameter EXE_A_LINK bound to: 2 - type: integer 
+	Parameter EXE_A_EXC bound to: 3 - type: integer 
+	Parameter EXE_B_RT bound to: 0 - type: integer 
+	Parameter EXE_B_IMM bound to: 1 - type: integer 
+	Parameter EXE_B_LINK bound to: 2 - type: integer 
+	Parameter EXE_B_EXC bound to: 3 - type: integer 
+	Parameter EXE_ALU_ADD bound to: 0 - type: integer 
+	Parameter EXE_ALU_SUB bound to: 1 - type: integer 
+	Parameter EXE_ALU_SLT bound to: 2 - type: integer 
+	Parameter EXE_ALU_LUI bound to: 3 - type: integer 
+	Parameter EXE_ALU_AND bound to: 4 - type: integer 
+	Parameter EXE_ALU_OR bound to: 5 - type: integer 
+	Parameter EXE_ALU_XOR bound to: 6 - type: integer 
+	Parameter EXE_ALU_NOR bound to: 7 - type: integer 
+	Parameter EXE_ALU_SLL bound to: 8 - type: integer 
+	Parameter EXE_ALU_SRL bound to: 9 - type: integer 
+	Parameter EXE_ALU_SRA bound to: 10 - type: integer 
+	Parameter EXE_ALU_SLLV bound to: 11 - type: integer 
+	Parameter EXE_ALU_SRLV bound to: 12 - type: integer 
+	Parameter EXE_ALU_SRAV bound to: 13 - type: integer 
+	Parameter WB_ADDR_RD bound to: 0 - type: integer 
+	Parameter WB_ADDR_RT bound to: 1 - type: integer 
+	Parameter WB_ADDR_LINK bound to: 2 - type: integer 
+	Parameter WB_DATA_ALU bound to: 0 - type: integer 
+	Parameter WB_DATA_MEM bound to: 1 - type: integer 
+	Parameter PC_RESET bound to: 0 - type: integer 
+	Parameter INST_R bound to: 6'b000000 
+	Parameter R_FUNC_SLL bound to: 6'b000000 
+	Parameter R_FUNC_SRL bound to: 6'b000010 
+	Parameter R_FUNC_SRA bound to: 6'b000011 
+	Parameter R_FUNC_SLLV bound to: 6'b000100 
+	Parameter R_FUNC_SRLV bound to: 6'b000110 
+	Parameter R_FUNC_SRAV bound to: 6'b000111 
+	Parameter R_FUNC_JR bound to: 6'b001000 
+	Parameter R_FUNC_ADD bound to: 6'b100000 
+	Parameter R_FUNC_ADDU bound to: 6'b100001 
+	Parameter R_FUNC_SUB bound to: 6'b100010 
+	Parameter R_FUNC_SUBU bound to: 6'b100011 
+	Parameter R_FUNC_AND bound to: 6'b100100 
+	Parameter R_FUNC_OR bound to: 6'b100101 
+	Parameter R_FUNC_XOR bound to: 6'b100110 
+	Parameter R_FUNC_NOR bound to: 6'b100111 
+	Parameter R_FUNC_SLT bound to: 6'b101010 
+	Parameter R_FUNC_SLTU bound to: 6'b101011 
+	Parameter INST_J bound to: 6'b000010 
+	Parameter INST_JAL bound to: 6'b000011 
+	Parameter INST_BEQ bound to: 6'b000100 
+	Parameter INST_BNE bound to: 6'b000101 
+	Parameter INST_ADDI bound to: 6'b001000 
+	Parameter INST_ADDIU bound to: 6'b001001 
+	Parameter INST_SLTI bound to: 6'b001010 
+	Parameter INST_SLTIU bound to: 6'b001011 
+	Parameter INST_ANDI bound to: 6'b001100 
+	Parameter INST_ORI bound to: 6'b001101 
+	Parameter INST_XORI bound to: 6'b001110 
+	Parameter INST_LUI bound to: 6'b001111 
+	Parameter INST_CP0 bound to: 6'b010000 
+	Parameter CP_FUNC_MF bound to: 4'b0000 
+	Parameter CP_FUNC_MT bound to: 4'b0100 
+	Parameter CP0_CO_ERET bound to: 6'b011000 
+	Parameter INST_LW bound to: 6'b100011 
+	Parameter INST_SW bound to: 6'b101011 
+	Parameter GPR_ZERO bound to: 0 - type: integer 
+	Parameter GPR_AT bound to: 1 - type: integer 
+	Parameter GPR_V0 bound to: 2 - type: integer 
+	Parameter GPR_V1 bound to: 3 - type: integer 
+	Parameter GPR_A0 bound to: 4 - type: integer 
+	Parameter GPR_A1 bound to: 5 - type: integer 
+	Parameter GPR_A2 bound to: 6 - type: integer 
+	Parameter GPR_A3 bound to: 7 - type: integer 
+	Parameter GPR_T0 bound to: 8 - type: integer 
+	Parameter GPR_T1 bound to: 9 - type: integer 
+	Parameter GPR_T2 bound to: 10 - type: integer 
+	Parameter GPR_T3 bound to: 11 - type: integer 
+	Parameter GPR_T4 bound to: 12 - type: integer 
+	Parameter GPR_T5 bound to: 13 - type: integer 
+	Parameter GPR_T6 bound to: 14 - type: integer 
+	Parameter GPR_T7 bound to: 15 - type: integer 
+	Parameter GPR_S0 bound to: 16 - type: integer 
+	Parameter GPR_S1 bound to: 17 - type: integer 
+	Parameter GPR_S2 bound to: 18 - type: integer 
+	Parameter GPR_S3 bound to: 19 - type: integer 
+	Parameter GPR_S4 bound to: 20 - type: integer 
+	Parameter GPR_S5 bound to: 21 - type: integer 
+	Parameter GPR_S6 bound to: 22 - type: integer 
+	Parameter GPR_S7 bound to: 23 - type: integer 
+	Parameter GPR_T8 bound to: 24 - type: integer 
+	Parameter GPR_T9 bound to: 25 - type: integer 
+	Parameter GPR_K0 bound to: 26 - type: integer 
+	Parameter GPR_K1 bound to: 27 - type: integer 
+	Parameter GPR_GP bound to: 28 - type: integer 
+	Parameter GPR_SP bound to: 29 - type: integer 
+	Parameter GPR_FP bound to: 30 - type: integer 
+	Parameter GPR_RA bound to: 31 - type: integer 
+	Parameter CP0_EPCR bound to: 2 - type: integer 
+	Parameter CP0_EHBR bound to: 3 - type: integer 
+	Parameter EXE_CP_NONE bound to: 0 - type: integer 
+	Parameter EXE_CP_STORE bound to: 1 - type: integer 
+	Parameter EXE_CP0_ERET bound to: 2 - type: integer 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000001011 is unreachable [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/alu.v:19]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/alu.v:19]
+INFO: [Synth 8-256] done synthesizing module 'alu' (11#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/alu.v:8]
+INFO: [Synth 8-638] synthesizing module 'cp0' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/CP0.v:3]
+	Parameter PC_NEXT bound to: 0 - type: integer 
+	Parameter PC_JUMP bound to: 1 - type: integer 
+	Parameter PC_JR bound to: 2 - type: integer 
+	Parameter PC_BEQ bound to: 4 - type: integer 
+	Parameter PC_BNE bound to: 5 - type: integer 
+	Parameter EXE_A_RS bound to: 0 - type: integer 
+	Parameter EXE_A_SA bound to: 1 - type: integer 
+	Parameter EXE_A_LINK bound to: 2 - type: integer 
+	Parameter EXE_A_EXC bound to: 3 - type: integer 
+	Parameter EXE_B_RT bound to: 0 - type: integer 
+	Parameter EXE_B_IMM bound to: 1 - type: integer 
+	Parameter EXE_B_LINK bound to: 2 - type: integer 
+	Parameter EXE_B_EXC bound to: 3 - type: integer 
+	Parameter EXE_ALU_ADD bound to: 0 - type: integer 
+	Parameter EXE_ALU_SUB bound to: 1 - type: integer 
+	Parameter EXE_ALU_SLT bound to: 2 - type: integer 
+	Parameter EXE_ALU_LUI bound to: 3 - type: integer 
+	Parameter EXE_ALU_AND bound to: 4 - type: integer 
+	Parameter EXE_ALU_OR bound to: 5 - type: integer 
+	Parameter EXE_ALU_XOR bound to: 6 - type: integer 
+	Parameter EXE_ALU_NOR bound to: 7 - type: integer 
+	Parameter EXE_ALU_SLL bound to: 8 - type: integer 
+	Parameter EXE_ALU_SRL bound to: 9 - type: integer 
+	Parameter EXE_ALU_SRA bound to: 10 - type: integer 
+	Parameter EXE_ALU_SLLV bound to: 11 - type: integer 
+	Parameter EXE_ALU_SRLV bound to: 12 - type: integer 
+	Parameter EXE_ALU_SRAV bound to: 13 - type: integer 
+	Parameter WB_ADDR_RD bound to: 0 - type: integer 
+	Parameter WB_ADDR_RT bound to: 1 - type: integer 
+	Parameter WB_ADDR_LINK bound to: 2 - type: integer 
+	Parameter WB_DATA_ALU bound to: 0 - type: integer 
+	Parameter WB_DATA_MEM bound to: 1 - type: integer 
+	Parameter PC_RESET bound to: 0 - type: integer 
+	Parameter INST_R bound to: 6'b000000 
+	Parameter R_FUNC_SLL bound to: 6'b000000 
+	Parameter R_FUNC_SRL bound to: 6'b000010 
+	Parameter R_FUNC_SRA bound to: 6'b000011 
+	Parameter R_FUNC_SLLV bound to: 6'b000100 
+	Parameter R_FUNC_SRLV bound to: 6'b000110 
+	Parameter R_FUNC_SRAV bound to: 6'b000111 
+	Parameter R_FUNC_JR bound to: 6'b001000 
+	Parameter R_FUNC_ADD bound to: 6'b100000 
+	Parameter R_FUNC_ADDU bound to: 6'b100001 
+	Parameter R_FUNC_SUB bound to: 6'b100010 
+	Parameter R_FUNC_SUBU bound to: 6'b100011 
+	Parameter R_FUNC_AND bound to: 6'b100100 
+	Parameter R_FUNC_OR bound to: 6'b100101 
+	Parameter R_FUNC_XOR bound to: 6'b100110 
+	Parameter R_FUNC_NOR bound to: 6'b100111 
+	Parameter R_FUNC_SLT bound to: 6'b101010 
+	Parameter R_FUNC_SLTU bound to: 6'b101011 
+	Parameter INST_J bound to: 6'b000010 
+	Parameter INST_JAL bound to: 6'b000011 
+	Parameter INST_BEQ bound to: 6'b000100 
+	Parameter INST_BNE bound to: 6'b000101 
+	Parameter INST_ADDI bound to: 6'b001000 
+	Parameter INST_ADDIU bound to: 6'b001001 
+	Parameter INST_SLTI bound to: 6'b001010 
+	Parameter INST_SLTIU bound to: 6'b001011 
+	Parameter INST_ANDI bound to: 6'b001100 
+	Parameter INST_ORI bound to: 6'b001101 
+	Parameter INST_XORI bound to: 6'b001110 
+	Parameter INST_LUI bound to: 6'b001111 
+	Parameter INST_CP0 bound to: 6'b010000 
+	Parameter CP_FUNC_MF bound to: 4'b0000 
+	Parameter CP_FUNC_MT bound to: 4'b0100 
+	Parameter CP0_CO_ERET bound to: 6'b011000 
+	Parameter INST_LW bound to: 6'b100011 
+	Parameter INST_SW bound to: 6'b101011 
+	Parameter GPR_ZERO bound to: 0 - type: integer 
+	Parameter GPR_AT bound to: 1 - type: integer 
+	Parameter GPR_V0 bound to: 2 - type: integer 
+	Parameter GPR_V1 bound to: 3 - type: integer 
+	Parameter GPR_A0 bound to: 4 - type: integer 
+	Parameter GPR_A1 bound to: 5 - type: integer 
+	Parameter GPR_A2 bound to: 6 - type: integer 
+	Parameter GPR_A3 bound to: 7 - type: integer 
+	Parameter GPR_T0 bound to: 8 - type: integer 
+	Parameter GPR_T1 bound to: 9 - type: integer 
+	Parameter GPR_T2 bound to: 10 - type: integer 
+	Parameter GPR_T3 bound to: 11 - type: integer 
+	Parameter GPR_T4 bound to: 12 - type: integer 
+	Parameter GPR_T5 bound to: 13 - type: integer 
+	Parameter GPR_T6 bound to: 14 - type: integer 
+	Parameter GPR_T7 bound to: 15 - type: integer 
+	Parameter GPR_S0 bound to: 16 - type: integer 
+	Parameter GPR_S1 bound to: 17 - type: integer 
+	Parameter GPR_S2 bound to: 18 - type: integer 
+	Parameter GPR_S3 bound to: 19 - type: integer 
+	Parameter GPR_S4 bound to: 20 - type: integer 
+	Parameter GPR_S5 bound to: 21 - type: integer 
+	Parameter GPR_S6 bound to: 22 - type: integer 
+	Parameter GPR_S7 bound to: 23 - type: integer 
+	Parameter GPR_T8 bound to: 24 - type: integer 
+	Parameter GPR_T9 bound to: 25 - type: integer 
+	Parameter GPR_K0 bound to: 26 - type: integer 
+	Parameter GPR_K1 bound to: 27 - type: integer 
+	Parameter GPR_GP bound to: 28 - type: integer 
+	Parameter GPR_SP bound to: 29 - type: integer 
+	Parameter GPR_FP bound to: 30 - type: integer 
+	Parameter GPR_RA bound to: 31 - type: integer 
+	Parameter CP0_EPCR bound to: 2 - type: integer 
+	Parameter CP0_EHBR bound to: 3 - type: integer 
+	Parameter EXE_CP_NONE bound to: 0 - type: integer 
+	Parameter EXE_CP_STORE bound to: 1 - type: integer 
+	Parameter EXE_CP0_ERET bound to: 2 - type: integer 
+WARNING: [Synth 8-350] instance 'cP0_REGFILE' of module 'regfile' requires 10 connections, but only 8 given [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/CP0.v:73]
+INFO: [Synth 8-256] done synthesizing module 'cp0' (12#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/CP0.v:3]
+WARNING: [Synth 8-350] instance 'CP0' of module 'cp0' requires 15 connections, but only 14 given [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/datapath.v:559]
+WARNING: [Synth 8-3848] Net rst in module/entity datapath does not have driver. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/datapath.v:570]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (13#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/datapath.v:3]
+INFO: [Synth 8-256] done synthesizing module 'mips_core' (14#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/mips_core.v:4]
+INFO: [Synth 8-638] synthesizing module 'inst_rom' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/inst_rom.v:1]
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'inst_mem.hex' is read successfully [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/inst_rom.v:13]
+INFO: [Synth 8-256] done synthesizing module 'inst_rom' (15#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/inst_rom.v:1]
+INFO: [Synth 8-638] synthesizing module 'data_ram' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/data_ram.v:1]
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'data_mem.hex' is read successfully [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/data_ram.v:15]
+INFO: [Synth 8-256] done synthesizing module 'data_ram' (16#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/data_ram.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mips' (17#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/mips.v:8]
+INFO: [Synth 8-638] synthesizing module 'vga' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/vga.v:1]
+INFO: [Synth 8-256] done synthesizing module 'vga' (18#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/vga.v:1]
+INFO: [Synth 8-638] synthesizing module 'vga_debug' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/vga_debug.v:21]
+INFO: [Synth 8-256] done synthesizing module 'vga_debug' (19#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/vga_debug.v:21]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (20#1) [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/mips_top.v:8]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[31]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[30]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[29]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[28]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[27]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[26]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[25]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[24]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[23]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[22]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[21]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[20]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[19]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[18]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[17]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[16]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[15]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[14]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[13]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[12]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[11]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[10]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[9]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[8]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[7]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[6]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[5]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[4]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[3]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[2]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[1]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[0]
+WARNING: [Synth 8-3331] design controller has unconnected port is_branch_id
+WARNING: [Synth 8-3331] design controller has unconnected port inst[15]
+WARNING: [Synth 8-3331] design controller has unconnected port inst[14]
+WARNING: [Synth 8-3331] design controller has unconnected port inst[13]
+WARNING: [Synth 8-3331] design controller has unconnected port inst[12]
+WARNING: [Synth 8-3331] design controller has unconnected port inst[11]
+WARNING: [Synth 8-3331] design controller has unconnected port inst[10]
+WARNING: [Synth 8-3331] design controller has unconnected port inst[9]
+WARNING: [Synth 8-3331] design controller has unconnected port inst[8]
+WARNING: [Synth 8-3331] design controller has unconnected port inst[7]
+WARNING: [Synth 8-3331] design controller has unconnected port inst[6]
+WARNING: [Synth 8-3331] design controller has unconnected port regw_addr_mem[4]
+WARNING: [Synth 8-3331] design controller has unconnected port regw_addr_mem[3]
+WARNING: [Synth 8-3331] design controller has unconnected port regw_addr_mem[2]
+WARNING: [Synth 8-3331] design controller has unconnected port regw_addr_mem[1]
+WARNING: [Synth 8-3331] design controller has unconnected port regw_addr_mem[0]
+WARNING: [Synth 8-3331] design controller has unconnected port wb_wen_mem
+WARNING: [Synth 8-3331] design controller has unconnected port if_valid
+WARNING: [Synth 8-3331] design controller has unconnected port id_valid
+WARNING: [Synth 8-3331] design controller has unconnected port exe_valid
+WARNING: [Synth 8-3331] design controller has unconnected port mem_valid
+WARNING: [Synth 8-3331] design controller has unconnected port wb_valid
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 357.863 ; gain = 150.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin cP0_REGFILE:addr_b[4] to constant 0 [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/CP0.v:73]
+WARNING: [Synth 8-3295] tying undriven pin cP0_REGFILE:addr_b[3] to constant 0 [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/CP0.v:73]
+WARNING: [Synth 8-3295] tying undriven pin cP0_REGFILE:addr_b[2] to constant 0 [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/CP0.v:73]
+WARNING: [Synth 8-3295] tying undriven pin cP0_REGFILE:addr_b[1] to constant 0 [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/CP0.v:73]
+WARNING: [Synth 8-3295] tying undriven pin cP0_REGFILE:addr_b[0] to constant 0 [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/CP0.v:73]
+WARNING: [Synth 8-3295] tying undriven pin CP0:rst to constant 0 [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/datapath.v:559]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 357.863 ; gain = 150.852
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'vga_debug' instantiated as 'VGA_DEBUG' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/mips_top.v:128]
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'BTN_Y[4]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'tri_led0_r_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'tri_led0_g_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'tri_led0_b_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'tri_led1_r_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'tri_led1_g_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'tri_led1_b_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[3]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[4]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[5]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[6]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[7]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[8]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[9]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[10]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[11]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[12]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[13]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[14]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[15]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[16]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[17]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[18]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[19]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'sram_ce_n[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'sram_ce_n[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'sram_ce_n[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[3]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[4]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[5]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[6]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[7]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[8]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[9]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[10]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[11]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[12]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[13]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[14]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[15]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[16]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[17]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[18]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[19]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[20]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[21]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[22]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[23]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[24]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[25]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[26]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[27]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[28]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[29]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[30]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[31]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[32]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[33]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[34]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[35]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[36]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[37]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[38]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[39]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[40]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[41]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[42]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[43]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[44]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[45]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[46]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'sram_data[47]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'sram_oe_n[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'sram_oe_n[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'sram_oe_n[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'sram_we_n[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'sram_we_n[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'sram_we_n[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'sram_ub_n[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'sram_ub_n[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'sram_ub_n[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'sram_lb_n[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'sram_lb_n[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'sram_lb_n[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'flash_addr[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'flash_addr[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:127]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:127]
+Finished Parsing XDC File [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/mips_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mips_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mips_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 791.066 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 791.066 ; gain = 584.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 791.066 ; gain = 584.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 791.066 ; gain = 584.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'btn_x_reg' in module 'btn_scan'
+INFO: [Synth 8-5546] ROM "result" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "btn_x" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'parallel2serial'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'parallel2serial__parameterized0'
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wb_data_src" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pc_src" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cp0_oper" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "wb_wen" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_wen" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "imm_ext" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "exe_a_src" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "exe_a_src" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "exe_alu_oper" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "wb_addr_src" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "unrecognized" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_oper" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs_used" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "sign" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/alu.v:27]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/alu.v:21]
+INFO: [Synth 8-5544] ROM "eret" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                           000001 |                            00000
+*
+                  iSTATE |                           000010 |                            11110
+                 iSTATE0 |                           000100 |                            11101
+                 iSTATE1 |                           001000 |                            11011
+                 iSTATE2 |                           010000 |                            10111
+                 iSTATE3 |                           100000 |                            01111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'btn_x_reg' using encoding 'one-hot' in module 'btn_scan'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                              000
+                 S_CLEAR |                               01 |                              001
+                  S_WORK |                               10 |                              010
+                  S_DONE |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'parallel2serial'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                              000
+                 S_CLEAR |                               01 |                              001
+                  S_WORK |                               10 |                              010
+                  S_DONE |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'parallel2serial__parameterized0'
+WARNING: [Synth 8-327] inferring latch for variable 'sign_reg' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/controller.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'ir_en_reg' [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/controller.v:468]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 791.066 ; gain = 584.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               65 Bit    Registers := 1     
+	               32 Bit    Registers := 19    
+	               20 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 35    
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+	              992 Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   4 Input     65 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 19    
+	   4 Input     32 Bit        Muxes := 5     
+	  13 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 8     
+	  16 Input      7 Bit        Muxes := 8     
+	   6 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  17 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 6     
+	   9 Input      2 Bit        Muxes := 2     
+	  18 Input      2 Bit        Muxes := 1     
+	  17 Input      2 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 29    
+	   4 Input      1 Bit        Muxes := 13    
+	  17 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 4     
+	  18 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mips_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module btn_scan 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+Module parallel2serial 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input     17 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 5     
+Module parallel2serial__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               65 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   4 Input     65 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 5     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 8     
+	  16 Input      7 Bit        Muxes := 8     
+Module controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  18 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  17 Input      3 Bit        Muxes := 2     
+	  18 Input      2 Bit        Muxes := 1     
+	  17 Input      2 Bit        Muxes := 9     
+	   4 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 4     
+	  18 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+Module regfile 
+Detailed RTL Component Info : 
++---RAMs : 
+	              992 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module cp0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 18    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   4 Input     32 Bit        Muxes := 5     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+Module inst_rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  13 Input     32 Bit        Muxes := 1     
+Module data_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 791.066 ; gain = 584.055
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "VGA/v_count" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design mips_top has port SEGLED_PEN driven by constant 1
+WARNING: [Synth 8-3917] design mips_top has port LED_PEN driven by constant 1
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[31]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[30]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[29]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[28]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[27]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[26]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[25]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[24]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[23]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[22]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[21]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[20]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[19]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[18]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[17]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[16]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[15]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[14]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[13]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[12]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[11]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[10]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[9]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[8]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[7]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[6]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[5]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[4]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[3]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[2]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[1]
+WARNING: [Synth 8-3331] design cp0 has unconnected port ret_addr[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 791.066 ; gain = 584.055
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 791.066 ; gain = 584.055
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mips_top    | MIPS/DATA_RAM/data_reg | 32 x 32(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------------+-----------+----------------------+---------------+
+|regfile     | regfile_reg             | Implied   | 32 x 32              | RAM32M x 18   | 
+|cp0         | cP0_REGFILE/regfile_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+-------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/buff_reg[0] )
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/wb_data_src_exe_reg' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/mem_ren_exe_reg'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_addr_next_id_reg[0]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_addr_id_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/is_load_exe_reg' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/mem_ren_exe_reg'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_addr_exe_reg[0]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_addr_next_exe_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[1]' (FD_1) to 'MIPS/INST_ROM/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[3]' (FD_1) to 'MIPS/INST_ROM/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/mem_ren_mem_reg' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/wb_data_src_mem_reg'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[4]' (FD_1) to 'MIPS/INST_ROM/out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[6]' (FD_1) to 'MIPS/INST_ROM/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[7]' (FD_1) to 'MIPS/INST_ROM/out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[8]' (FD_1) to 'MIPS/INST_ROM/out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[9]' (FD_1) to 'MIPS/INST_ROM/out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[10]' (FD_1) to 'MIPS/INST_ROM/out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[13]' (FD_1) to 'MIPS/INST_ROM/out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[14]' (FD_1) to 'MIPS/INST_ROM/out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[15]' (FD_1) to 'MIPS/INST_ROM/out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[17]' (FD_1) to 'MIPS/INST_ROM/out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[19]' (FD_1) to 'MIPS/INST_ROM/out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[20]' (FD_1) to 'MIPS/INST_ROM/out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'MIPS/INST_ROM/out_reg[24]' (FD_1) to 'MIPS/INST_ROM/out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[0]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[1]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[1]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[2]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[3]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[3]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[4]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[5]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[6]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[7]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[7]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[8]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[9]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[9]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[10]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[10]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[11]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[11]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[12]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[12]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[13]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[13]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[14]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[15]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[16]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[17]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[17]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[18]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[18]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[19]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[19]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[20]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[20]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[21]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[21]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[22]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[22]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[23]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[23]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[24]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[24]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[25]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[26]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[26]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[27]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[27]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[28]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[28]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[29]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[29]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[30]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[30]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIPS/INST_ROM/out_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_LED/cycle_count_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/cycle_count_reg[0] )
+INFO: [Synth 8-3886] merging instance 'DISPLAY/P2S_SEG/buff_reg[0]' (FDE) to 'DISPLAY/P2S_SEG/buff_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/buff_reg[1] )
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/mem_wen_exe_reg' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[14]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[13]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[10]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[9]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[8]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[7]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[6]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[1]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[1]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[6]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[7]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[8]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[9]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[10]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[13]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIPS/MIPS_CORE/DATAPATH /\inst_data_mem_reg[14] )
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/mem_ren_exe_reg' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/wb_data_src_mem_reg' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/mem_wen_mem_reg'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/regw_addr_exe_reg[3]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/regw_addr_exe_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_id_reg[4]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_id_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_id_reg[3]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_id_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[3]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[4]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[15]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[19]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[20]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[24]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/data_imm_exe_reg[31]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_id_reg[17]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_id_reg[22]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[31]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/mem_wen_mem_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIPS/MIPS_CORE/DATAPATH /\inst_data_exe_reg[31] )
+INFO: [Synth 8-3886] merging instance 'DISPLAY/P2S_SEG/buff_reg[1]' (FDE) to 'DISPLAY/P2S_SEG/buff_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/buff_reg[2] )
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[3]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[4]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/regw_addr_mem_reg[3]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/regw_addr_mem_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/regw_addr_wb_reg[4]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/regw_addr_wb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[17]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_exe_reg[22]'
+INFO: [Synth 8-3886] merging instance 'DISPLAY/P2S_SEG/buff_reg[2]' (FDE) to 'DISPLAY/P2S_SEG/buff_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/buff_reg[3] )
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[17]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/inst_data_mem_reg[22]'
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[31]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[24]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[20]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[19]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[17]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[15]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[14]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[13]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[10]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_id_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (wb_data_src_exe_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (wb_data_src_mem_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (regw_addr_exe_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (regw_addr_mem_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (mem_ren_exe_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[17]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[30]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[29]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[28]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[27]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[26]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[25]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[24]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[23]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[22]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[21]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[20]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[19]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[18]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[17]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[16]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (mem_wen_exe_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (mem_wen_mem_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (mem_ren_mem_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (regw_addr_wb_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[24]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[20]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[19]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[17]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[15]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[14]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[13]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[10]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (is_load_exe_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (id_valid_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (exe_valid_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (mem_valid_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (wb_valid_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_addr_next_id_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_addr_exe_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[10]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[10]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[11]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[12]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[13]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[13]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[14]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[14]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[15]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[15]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (data_imm_exe_reg[31]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[19]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[20]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[24]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_exe_reg[31]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (inst_data_mem_reg[31]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (MIPS/INST_ROM/out_reg[31]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (MIPS/INST_ROM/out_reg[24]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (MIPS/INST_ROM/out_reg[20]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (MIPS/INST_ROM/out_reg[19]) is unused and will be removed from module mips_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'MIPS/MIPS_CORE/DATAPATH/exe_b_src_exe_reg[1]' (FDRE) to 'MIPS/MIPS_CORE/DATAPATH/exe_a_src_exe_reg[1]'
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 791.066 ; gain = 584.055
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 791.066 ; gain = 584.055
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 791.066 ; gain = 584.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 791.066 ; gain = 584.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance MIPS/DATA_RAM/data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance MIPS/DATA_RAM/data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 830.875 ; gain = 623.863
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 830.875 ; gain = 623.863
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 830.875 ; gain = 623.863
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 830.875 ; gain = 623.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 830.875 ; gain = 623.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 830.875 ; gain = 623.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 830.875 ; gain = 623.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 830.875 ; gain = 623.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 830.875 ; gain = 623.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mips_top    | DISPLAY/P2S_LED/buff_reg[13] | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mips_top    | DISPLAY/P2S_SEG/buff_reg[53] | 6      | 2     | YES          | NO                 | YES               | 2      | 0       | 
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |vga_debug     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |vga_debug  |     1|
+|2     |BUFG       |     5|
+|3     |CARRY4     |    70|
+|4     |LUT1       |    79|
+|5     |LUT2       |    97|
+|6     |LUT3       |   244|
+|7     |LUT4       |   223|
+|8     |LUT5       |   258|
+|9     |LUT6       |  1063|
+|10    |MMCME2_ADV |     1|
+|11    |MUXF7      |    74|
+|12    |RAM32M     |    30|
+|13    |RAMB18E1   |     1|
+|14    |SRL16E     |     3|
+|15    |FDRE       |   705|
+|16    |FDSE       |    30|
+|17    |LD         |     1|
+|18    |IBUF       |    11|
+|19    |IBUFGDS    |     1|
+|20    |OBUF       |    25|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------------+--------------------------------+------+
+|      |Instance              |Module                          |Cells |
++------+----------------------+--------------------------------+------+
+|1     |top                   |                                |  2940|
+|2     |  BTN_SCAN            |btn_scan                        |    58|
+|3     |  CLK_DIFF            |clk_diff                        |     1|
+|4     |  CLK_GEN             |my_clk_gen                      |     6|
+|5     |  DISPLAY             |display                         |   219|
+|6     |    P2S_LED           |parallel2serial                 |    50|
+|7     |    P2S_SEG           |parallel2serial__parameterized0 |   119|
+|8     |  MIPS                |mips                            |  2507|
+|9     |    DATA_RAM          |data_ram                        |     1|
+|10    |    INST_ROM          |inst_rom                        |    34|
+|11    |    MIPS_CORE         |mips_core                       |  2472|
+|12    |      CONTROLLER      |controller                      |     2|
+|13    |      DATAPATH        |datapath                        |  2469|
+|14    |        CP0           |cp0                             |   982|
+|15    |          cP0_REGFILE |regfile_0                       |   976|
+|16    |        REGFILE       |regfile                         |   255|
+|17    |  VGA                 |vga                             |    72|
++------+----------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 830.875 ; gain = 623.863
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 173 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 830.875 ; gain = 101.938
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 830.875 ; gain = 623.863
+INFO: [Project 1-571] Translating synthesized netlist
+Reading core file 'E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/sources_1/imports/exp3_student/vga_debug.ngc' for (cell view 'vga_debug', library 'work')
+Parsing EDIF File [./.ngc2edfcache/vga_debug_ngc_9959d238.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/vga_debug_ngc_9959d238.edif]
+INFO: [Netlist 29-17] Analyzing 177 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20160526
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 48 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 94 instances were transformed.
+  FD => FDRE: 45 instances
+  FDE => FDRE: 7 instances
+  IBUFGDS => IBUFDS: 1 instances
+  INV => LUT1: 2 instances
+  LD => LDCE: 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 30 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+  RAMB16_S1 => RAMB18E1: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+205 Infos, 310 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 843.953 ; gain = 619.379
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 843.953 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 08 19:21:51 2017...

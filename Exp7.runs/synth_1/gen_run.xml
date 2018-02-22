@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1512732039">
+  <File Type="RDS-PROPCONSTRS" Name="mips_top_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="mips_top.tcl"/>
+  <File Type="RDS-RDS" Name="mips_top.vds"/>
+  <File Type="RDS-UTIL" Name="mips_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mips_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mips_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mips_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mips_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/define.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/define.vh"/>
+        <Attr Name="ImportTime" Val="1505915246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/regfile.v"/>
+        <Attr Name="ImportTime" Val="1458563893"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/mips_define.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/mips_define.vh"/>
+        <Attr Name="ImportTime" Val="1511916792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/CP0.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/CP0.v"/>
+        <Attr Name="ImportTime" Val="1512691067"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/alu.v"/>
+        <Attr Name="ImportTime" Val="1511938317"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/controller.v"/>
+        <Attr Name="ImportTime" Val="1511936925"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/datapath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/datapath.v"/>
+        <Attr Name="ImportTime" Val="1511937474"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/mips_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/mips_core.v"/>
+        <Attr Name="ImportTime" Val="1511917832"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/function.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/function.vh"/>
+        <Attr Name="ImportTime" Val="1427009668"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/parallel2serial.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/parallel2serial.v"/>
+        <Attr Name="ImportTime" Val="1422260218"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/data_ram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/data_ram.v"/>
+        <Attr Name="ImportTime" Val="1448608748"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/inst_rom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/inst_rom.v"/>
+        <Attr Name="ImportTime" Val="1508231684"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/my_clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/my_clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1505735973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/clk_diff.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/clk_diff.v"/>
+        <Attr Name="ImportTime" Val="1505730321"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/btn_scan.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/btn_scan.v"/>
+        <Attr Name="ImportTime" Val="1506330840"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/vga_debug.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/vga_debug.ngc"/>
+        <Attr Name="ImportTime" Val="1506401307"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/display.v"/>
+        <Attr Name="ImportTime" Val="1506327462"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/vga_debug.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/vga_debug.v"/>
+        <Attr Name="ImportTime" Val="1506341769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/mips.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/mips.v"/>
+        <Attr Name="ImportTime" Val="1508324858"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/vga.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/vga.v"/>
+        <Attr Name="ImportTime" Val="1506340119"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exp3_student/mips_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/sources_1/imports/exp3_student/mips_top.v"/>
+        <Attr Name="ImportTime" Val="1508324809"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mips_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Jinhong/SwordV4_contraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Exp6/Exp6.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc"/>
+        <Attr Name="ImportTime" Val="1508318525"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

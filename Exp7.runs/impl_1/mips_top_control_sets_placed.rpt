@@ -1,0 +1,78 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Fri Dec 08 19:23:25 2017
+| Host         : DESKTOP-TMLJAH8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file mips_top_control_sets_placed.rpt
+| Design       : mips_top
+| Device       : xc7vx485t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    25 |
+| Unused register locations in slices containing registers |    77 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             134 |           82 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              88 |           33 |
+| Yes          | No                    | No                     |              35 |           12 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             530 |          214 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------+------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|                  Clock Signal                 |                  Enable Signal                 |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++-----------------------------------------------+------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  MIPS/MIPS_CORE/DATAPATH/alu_out_mem_reg[0]_0 |                                                |                                                     |                1 |              1 |
+|  CLK_GEN/CLK_OUT3                             | DISPLAY/P2S_LED/next_data_count                | rst_all                                             |                2 |              4 |
+|  CLK_GEN/CLK_OUT3                             | DISPLAY/P2S_SEG/buff                           |                                                     |                2 |              4 |
+| ~CLK_GEN/CLK_OUT4                             |                                                | MIPS/MIPS_CORE/DATAPATH/D[0]                        |                2 |              4 |
+| ~CLK_GEN/CLK_OUT4                             |                                                | MIPS/MIPS_CORE/DATAPATH/D[1]                        |                3 |              4 |
+|  CLK_GEN/CLK_OUT3                             | BTN_SCAN/p_0_in                                |                                                     |                1 |              5 |
+|  CLK_GEN/CLK_OUT3                             | DISPLAY/P2S_SEG/next_data_count                | rst_all                                             |                4 |              6 |
+|  CLK_GEN/CLK_OUT3                             | DISPLAY/P2S_LED/buff_0                         | DISPLAY/P2S_LED/buff[16]_i_1__0_n_0                 |                2 |              7 |
+|  CLK_GEN/CLK_OUT3                             | VGA_DEBUG/col_addr[2]_PWR_1_o_equal_18_o       |                                                     |                4 |              7 |
+| ~CLK_GEN/CLK_OUT4                             |                                                |                                                     |                5 |              8 |
+|  CLK_GEN/CLK_OUT3                             |                                                | VGA/h_count[9]_i_1_n_0                              |                4 |             10 |
+|  CLK_GEN/CLK_OUT3                             | VGA/v_count                                    |                                                     |                2 |             10 |
+|  CLK_GEN/CLK_OUT3                             |                                                | VGA/rdn                                             |                6 |             12 |
+|  CLK_GEN/CLK_OUT3                             | DISPLAY/P2S_LED/buff_0                         |                                                     |                5 |             12 |
+|  CLK_GEN/CLK_OUT3                             | DISPLAY/P2S_SEG/buff                           | DISPLAY/P2S_SEG/buff[64]_i_1_n_0                    |                5 |             25 |
+|  CLK_GEN/CLK_OUT3                             |                                                | rst_all                                             |                9 |             26 |
+|  CLK_GEN/CLK_OUT3                             | DISPLAY/P2S_SEG/buff                           | DISPLAY/P2S_SEG/buff[63]_i_1_n_0                    |                9 |             30 |
+|  CLK_GEN/CLK_OUT4                             |                                                | MIPS/MIPS_CORE/DATAPATH/CP0/cp0_jump_addr_id_reg[0] |                9 |             32 |
+|  CLK_GEN/CLK_OUT3                             | VGA_DEBUG/should_latch_debug_data              |                                                     |                6 |             44 |
+|  CLK_GEN/CLK_OUT4                             |                                                |                                                     |               35 |             54 |
+|  CLK_GEN/CLK_OUT3                             |                                                |                                                     |               41 |             71 |
+|  CLK_GEN/CLK_OUT4                             | BTN_SCAN/id_en                                 | MIPS/MIPS_CORE/DATAPATH/CP0/SR[0]                   |               29 |             79 |
+| ~CLK_GEN/CLK_OUT4                             | MIPS/MIPS_CORE/DATAPATH/CP0/cP0_REGFILE/p_0_in |                                                     |               12 |             96 |
+| ~CLK_GEN/CLK_OUT4                             | MIPS/MIPS_CORE/DATAPATH/REGFILE/p_0_in         |                                                     |               18 |            144 |
+|  CLK_GEN/CLK_OUT4                             | BTN_SCAN/id_en                                 | rst_all                                             |              163 |            379 |
++-----------------------------------------------+------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+
+

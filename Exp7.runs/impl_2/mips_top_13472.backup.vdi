@@ -1,0 +1,709 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Dec 08 19:40:57 2017
+# Process ID: 13472
+# Current directory: E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.runs/impl_2
+# Command line: vivado.exe -log mips_top.vdi -applog -messageDb vivado.pb -mode batch -source mips_top.tcl -notrace
+# Log file: E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.runs/impl_2/mips_top.vdi
+# Journal file: E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source mips_top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 119 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7k325tffg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN_Y[4]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tri_led0_r_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tri_led0_g_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tri_led0_b_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tri_led1_r_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tri_led1_g_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tri_led1_b_n'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[3]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[4]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[5]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[6]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[7]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[8]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[9]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[10]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[11]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[12]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[13]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[14]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[15]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[16]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[17]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[18]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[19]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_ce_n[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_ce_n[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_ce_n[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[3]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[4]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[5]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[6]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[7]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[8]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[9]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[10]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[11]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[12]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[13]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[14]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[15]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[16]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[17]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[18]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[19]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[20]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[21]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[22]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[23]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[24]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[25]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[26]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[27]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[28]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[29]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[30]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[31]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[32]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[33]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[34]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[35]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[36]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[37]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[38]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[39]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[40]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[41]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[42]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[43]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[44]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[45]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[46]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_data[47]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_oe_n[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_oe_n[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_oe_n[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_we_n[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_we_n[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_we_n[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_ub_n[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_ub_n[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_ub_n[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_lb_n[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_lb_n[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sram_lb_n[2]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_addr[0]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'flash_addr[1]'. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:127]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc:127]
+Finished Parsing XDC File [E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.srcs/constrs_1/imports/Jinhong/SwordV4_contraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 37 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 30 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 531.453 ; gain = 300.238
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.641 . Memory (MB): peak = 575.828 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1ed72367b
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: f16164fd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.833 . Memory (MB): peak = 1057.324 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 1 cells.
+Phase 2 Constant Propagation | Checksum: 1ce86f1c5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1057.324 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 204 unconnected nets.
+INFO: [Opt 31-11] Eliminated 3 unconnected cells.
+Phase 3 Sweep | Checksum: 142727786
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1057.324 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1057.324 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 142727786
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1057.324 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 1 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 10e90eeab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.984 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 10e90eeab
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1159.297 ; gain = 101.973
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 1159.297 ; gain = 627.844
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1159.297 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.runs/impl_2/mips_top_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1159.297 ; gain = 0.000
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1159.297 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 ParallelPlaceIOClockAndInitTop
+
+Phase 1.1.1.1 Pre-Place Cells
+Phase 1.1.1.1 Pre-Place Cells | Checksum: b6196715
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 1.1.1.2 Constructing HAPIClkRuleMgr
+Phase 1.1.1.2 Constructing HAPIClkRuleMgr | Checksum: b6196715
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1159.297 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.1.3 IO and Clk Clean Up
+
+Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr
+Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr | Checksum: b6196715
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Phase 1.1.1.3 IO and Clk Clean Up | Checksum: b6196715
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 1.1.1.4 Implementation Feasibility check On IDelay
+Phase 1.1.1.4 Implementation Feasibility check On IDelay | Checksum: b6196715
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 1.1.1.5 Commit IO Placement
+Phase 1.1.1.5 Commit IO Placement | Checksum: 00647087
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Phase 1.1.1 ParallelPlaceIOClockAndInitTop | Checksum: 00647087
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 014f01f4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Make Others
+Phase 1.2.1.1 Make Others | Checksum: d5920c81
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Phase 1.2.1 Place Init Design | Checksum: 06ce7f83
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Phase 1.2 Build Placer Netlist Model | Checksum: 06ce7f83
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 06ce7f83
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 06ce7f83
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 188509d4c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 188509d4c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: f01cfa48
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 10b828cdd
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 3.4 Small Shape Detail Placement
+Phase 3.4 Small Shape Detail Placement | Checksum: 10e66db1f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: 10e66db1f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 3.6 Pipeline Register Optimization
+Phase 3.6 Pipeline Register Optimization | Checksum: 10e66db1f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 10e66db1f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 10e66db1f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 10e66db1f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 10e66db1f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: 10e66db1f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1159.297 ; gain = 0.000
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 203a2291d
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 203a2291d
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Ending Placer Task | Checksum: 1c1cfab85
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1159.297 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+43 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.828 . Memory (MB): peak = 1159.297 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.847 . Memory (MB): peak = 1159.297 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.422 . Memory (MB): peak = 1159.297 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1159.297 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: cba9cc1a ConstDB: 0 ShapeSum: f625df6b RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1018a3bd4
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:39 . Memory (MB): peak = 1351.625 ; gain = 192.328
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1018a3bd4
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:42 . Memory (MB): peak = 1353.512 ; gain = 194.215
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1018a3bd4
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:42 . Memory (MB): peak = 1353.512 ; gain = 194.215
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: a2fe3243
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:47 . Memory (MB): peak = 1411.656 ; gain = 252.359
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1787c9a28
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:49 . Memory (MB): peak = 1411.656 ; gain = 252.359
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 441
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 1657cf52b
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:50 . Memory (MB): peak = 1411.656 ; gain = 252.359
+Phase 4 Rip-up And Reroute | Checksum: 1657cf52b
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:50 . Memory (MB): peak = 1411.656 ; gain = 252.359
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 1657cf52b
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:50 . Memory (MB): peak = 1411.656 ; gain = 252.359
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 1657cf52b
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:50 . Memory (MB): peak = 1411.656 ; gain = 252.359
+Phase 6 Post Hold Fix | Checksum: 1657cf52b
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:50 . Memory (MB): peak = 1411.656 ; gain = 252.359
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.160814 %
+  Global Horizontal Routing Utilization  = 0.254678 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 36.9369%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 35.1351%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 50%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 57.3529%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1657cf52b
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.656 ; gain = 252.359
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1657cf52b
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.656 ; gain = 252.359
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1367a2638
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.656 ; gain = 252.359
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.656 ; gain = 252.359
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+51 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:06 ; elapsed = 00:00:54 . Memory (MB): peak = 1411.656 ; gain = 252.359
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.894 . Memory (MB): peak = 1411.656 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/My universe/university/Course/Computer Architecture/Lab/Source/Exp7/Exp7.runs/impl_2/mips_top_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 08 19:43:50 2017...
